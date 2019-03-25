@@ -9,4 +9,4 @@ WHITE=$(tput setaf 7)
 RESET=$(tput setaf 0)
 
 # The cli
-export PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u(\[$RED\]$(batter-status)%)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ "
+export PS1='\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u$(battery-status)$(ping-speed)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]$(__git_ps1)\[$WHITE\]\$ '
