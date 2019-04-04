@@ -47,6 +47,8 @@ alias docker='docker_bush'
 alias cat='bat'  # https://github.com/sharkdp/bat
 alias preview="fzf --preview 'bat --color \"always\" {}'"  # https://github.com/junegunn/fzf
 alias top='sudo htop'
+alias ping8='ping 8.8.8.8'
+alias ping1='ping 1.1.1.1'
 
 # Work envs
 alias cd-dev-heili='cd /Users/davidg/Development/heili'
