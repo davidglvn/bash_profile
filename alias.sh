@@ -29,6 +29,9 @@ battery-status() {
 
 # Ping speed
 ping-speed() {
+  if [[ ${SKIP_NETWORK_CHECK} ]]; then
+    return 0
+  fi
   if [[ $(ifconfig en0 | grep status | grep inactive) ]]; then
     echo "(N.A.)"
     return 0
