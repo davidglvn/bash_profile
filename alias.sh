@@ -29,6 +29,10 @@ battery-status() {
 
 # Ping speed
 ping-speed() {
+  if [[ $(ifconfig en0 | grep status | grep inactive) ]]; then
+    echo "(N.A.)"
+    return 0
+  fi
   speed=$(ping -qc1 -t 1 8.8.8.8 2>&1 | awk -F/ '/^round-trip/ { printf "%.2f\n", $5; ok = 1 } END { if (!ok) print "0" }')
   speed_int=$(echo $speed | cut -d'.' -f1)
   if [ "$speed_int" -gt "100" ]; then
