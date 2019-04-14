@@ -10,4 +10,4 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # fuzzy completion
-$(brew --prefix)/opt/fzf/install
+# $(brew --prefix)/opt/fzf/install
