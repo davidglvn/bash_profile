@@ -17,7 +17,7 @@ export PATH
 
 # Some Java things
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
-export M2_HOME=/Users/davidg/apache-maven-3.2.5
+export M2_HOME=/Users/davidg/apache-maven-3.6.0
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
 
