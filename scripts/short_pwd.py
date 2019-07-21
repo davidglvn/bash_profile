@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/local/bin/python3
 # Shorten current path
 # Based on:
 # https://askubuntu.com/questions/17723/trim-the-terminal-command-prompt-working-directory/17738#17738
