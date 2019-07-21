@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>im.golovan.clear-downloads-dir</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/davidg/bash_profile/scripts/clear_dir.sh</string>
+        <string>/Users/davidg/Downloads</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>604800</integer>
+</dict>
+</plist>
