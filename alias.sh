@@ -58,9 +58,11 @@ alias ping8='ping 8.8.8.8'
 alias ping1='ping 1.1.1.1'
 
 # Work envs
-alias cd-dev-heili='cd /Users/davidg/Development/heili'
-alias cd-dev-forthscale='cd /Users/davidg/Development/forthscale'
-alias cd-dev-feedvisor='cd /Users/davidg/Development/feedvisor'
+alias py-endor='source /Users/davidg/virtualenvs/endor/bin/activate'
+alias ssh-u='ssh -l ubuntu -i /Users/davidg/.ssh/endor.pem'
+#alias cd-dev-heili='cd /Users/davidg/Development/heili'
+#alias cd-dev-forthscale='cd /Users/davidg/Development/forthscale'
+#alias cd-dev-feedvisor='cd /Users/davidg/Development/feedvisor'
 
 # Load in the git branch prompt script.
 source ~/.git-prompt.sh
