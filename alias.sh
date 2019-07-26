@@ -56,10 +56,12 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"  # https://github.com/
 alias top='sudo htop'
 alias ping8='ping 8.8.8.8'
 alias ping1='ping 1.1.1.1'
+alias cerebro='docker run --rm -p 9000:9000 lmenezes/cerebro'
 
 # Work envs
 alias py-endor='source /Users/davidg/virtualenvs/endor/bin/activate'
 alias ssh-u='ssh -l ubuntu -i /Users/davidg/.ssh/endor.pem'
+alias ssh-a='ssh -l ec2-user -i /Users/davidg/.ssh/endor.pem'
 #alias cd-dev-heili='cd /Users/davidg/Development/heili'
 #alias cd-dev-forthscale='cd /Users/davidg/Development/forthscale'
 #alias cd-dev-feedvisor='cd /Users/davidg/Development/feedvisor'
