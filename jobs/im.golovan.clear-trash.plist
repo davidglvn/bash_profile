@@ -9,6 +9,12 @@
         <string>/bin/bash</string>
         <string>/Users/davidg/bash_profile/scripts/clear_trash.sh</string>
     </array>
+    <key>UserName</key>
+    <string>davidg</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/mycommand.err</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/mycommand.out</string>
     <key>StartInterval</key>
     <integer>1209600</integer>
 </dict>
