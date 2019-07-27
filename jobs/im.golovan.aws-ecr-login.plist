@@ -7,8 +7,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>-c</string>
-        <string>"$(/usr/local/bin/aws ecr get-login --no-include-email)"</string>
+        <string>/Users/davidg/bash_profile/scripts/aws_ecr_login.sh</string>
     </array>
     <key>StartCalendarInterval</key>
     <array>
