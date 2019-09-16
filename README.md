@@ -27,6 +27,14 @@ Improved `top`
 Move files to trash
 `brew install trash`
 
+### [kubectx / kubens](https://github.com/ahmetb/kubectx)
+Power tools for kubectl
+`brew install kubectx`
+
+### [kube-ps1](https://github.com/jonmosco/kube-ps1)
+K8s prompt
+`brew install kube-ps1`
+
 ## Configure
 Add to `~/.bash_profile`
 ```
