@@ -8,6 +8,15 @@ MAGENTA=$(tput setaf 5)
 WHITE=$(tput setaf 7)
 RESET=$(tput setaf 0)
 
+# Terraform worksapce
+__trfrm_ps1() {
+    if [ -d ".terraform" ]; then
+        echo "[$(/usr/local/bin/terraform workspace show)]"
+    else
+        echo ""
+    fi
+}
+
 # The cli
-export PS1='\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u$(battery-status)$(ping-speed)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]$(~/bash_profile/scripts/short_pwd.py)\[\033[m\]\[$MAGENTA\]$(__git_ps1)\[$WHITE\]\$ '
+export PS1='\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u$(battery-status)$(ping-speed)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]$(~/bash_profile/scripts/short_pwd.py)\[\033[m\]\[$MAGENTA\]$(__git_ps1)\[$MAGENTA\]$(__trfrm_ps1)\[$WHITE\]\$ '
 #export PS1='\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u$(battery-status)$(ping-speed)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]$(__git_ps1)\[$WHITE\]\$ '
