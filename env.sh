@@ -33,3 +33,6 @@ if [ -f '/Users/davidg/.kubeconfig' ]; then source '/Users/davidg/.kubeconfig'; 
 
 # https://github.com/junegunn/fzf - add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+
+# General stuff
+SSH_PEM_PATH="/Users/davidg/.ssh"
