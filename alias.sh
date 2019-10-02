@@ -47,6 +47,14 @@ ping-speed() {
   fi
 }
 
+# Flush DNS
+flush-dns() {
+  echo "Flushing DNS cache"
+  dscacheutil -flushcache
+  echo "Kulling DNS daemons [Password required]"
+  sudo killall -HUP mDNSResponder
+}
+
 # Some shortcuts
 alias ll='ls -lah'
 alias ssh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $@'
@@ -57,6 +65,7 @@ alias top='sudo htop'
 alias kube='kubectl'
 alias ping8='ping 8.8.8.8'
 alias ping1='ping 1.1.1.1'
+alias flushdns='flush-dns'
 alias cerebro='docker run --rm -p 9000:9000 lmenezes/cerebro'
 
 # Work envs
