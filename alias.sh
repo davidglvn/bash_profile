@@ -54,6 +54,7 @@ alias docker='docker_bush'
 alias cat='bat'  # https://github.com/sharkdp/bat
 alias preview="fzf --preview 'bat --color \"always\" {}'"  # https://github.com/junegunn/fzf
 alias top='sudo htop'
+alias kube='kubectl'
 alias ping8='ping 8.8.8.8'
 alias ping1='ping 1.1.1.1'
 alias cerebro='docker run --rm -p 9000:9000 lmenezes/cerebro'

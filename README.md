@@ -4,6 +4,11 @@
 `xcode-select --install`
 ### Brew
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+### Bash
+Upgrade bash
+`brew install bash`
+### Bash completition
+`brew install bash-completion@2`
 ### Python 3
 `brew install python3`
 ### Docker

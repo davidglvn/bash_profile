@@ -21,6 +21,10 @@ export M2_HOME=/Users/davidg/apache-maven-3.6.0
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
 
+#NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm	
+
 # Forthscale
 export FSSH_DEBUG=true
 
