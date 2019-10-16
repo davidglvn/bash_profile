@@ -22,4 +22,4 @@ export KUBE_PS1_SYMBOL_ENABLE="false"
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 
 # The cli
-export PS1='\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u$(battery-status)$(ping-speed)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]$(~/bash_profile/scripts/short_pwd.py)\[\033[m\]\[$MAGENTA\]$(__git_ps1)\[$MAGENTA\]$(__trfrm_ps1)\[$WHITE\]$(kube_ps1)\$ '
+export PS1='\[$GREEN\]\t$(battery-status)$(ping-speed)\[$BLUE\][$(nvm current)]\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]$(~/bash_profile/scripts/short_pwd.py)\[\033[m\]\[$MAGENTA\]$(__git_ps1)\[$MAGENTA\]$(__trfrm_ps1)\[$WHITE\]$(kube_ps1)\$ '
