@@ -12,19 +12,21 @@ battery-status() {
   # get percents
   percents=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
   if [ "$percents" -gt "40" ]; then
-    output="$(tput setaf 12)(${percents}%"
+    main_color=12
+    output="${percents}%"
   else
-    output="$(tput setaf 1)(${percents}%"
+    main_color=1
+    output="${percents}%"
   fi
   # get charge status
   if [[ $(pmset -g batt | grep -c discharging) == 1 ]]; then
-    output="$(tput sgr 0 1)${output})"
+    output="$(tput sgr 0 1)$(tput setaf ${main_color})(${output})"
   elif [[ $(pmset -g batt | grep -c charged) == 1 ]]; then
     output=""
   else
-    output="$(tput bold)⚡${output})"
+    output="$(tput bold)$(tput setaf ${main_color})(⚡${output})"
   fi
-  echo "$output$(tput sgr 0)"
+  echo "${output}$(tput sgr 0)"
 }
 
 # Ping speed
@@ -66,7 +68,7 @@ alias kube='kubectl'
 alias ping8='ping 8.8.8.8'
 alias ping1='ping 1.1.1.1'
 alias flushdns='flush-dns'
-alias cerebro='docker run --rm -p 9000:9000 lmenezes/cerebro'
+alias cerebro='docker run --network host --rm -p 9000:9000 lmenezes/cerebro'
 
 # Work envs
 alias py-endor='source /Users/davidg/virtualenvs/endor/bin/activate'

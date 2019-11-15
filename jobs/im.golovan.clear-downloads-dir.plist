@@ -10,6 +10,12 @@
         <string>/Users/davidg/bash_profile/scripts/clear_dir.sh</string>
         <string>/Users/davidg/Downloads</string>
     </array>
+    <key>UserName</key>
+    <string>davidg</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/davidg/bash_profile/logs/clear-downloads-dir.err</string>
+    <key>StandardOutPath</key>
+    <string>/Users/davidg/bash_profile/logs/clear-downloads-dir.out</string>
     <key>StartInterval</key>
     <integer>604800</integer>
 </dict>

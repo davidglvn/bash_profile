@@ -18,6 +18,10 @@ __trfrm_ps1() {
 }
 
 # kube-ps1
+function remove_username_from_cluster() {
+    echo "$1" | cut -d '@' -f2
+}
+export KUBE_PS1_CLUSTER_FUNCTION=remove_username_from_cluster
 export KUBE_PS1_SYMBOL_ENABLE="false"
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 

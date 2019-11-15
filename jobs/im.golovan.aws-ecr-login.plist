@@ -9,6 +9,12 @@
         <string>/bin/bash</string>
         <string>/Users/davidg/bash_profile/scripts/aws_ecr_login.sh</string>
     </array>
+    <key>UserName</key>
+    <string>davidg</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/davidg/bash_profile/logs/aws-ecr-login.err</string>
+    <key>StandardOutPath</key>
+    <string>/Users/davidg/bash_profile/logs/aws-ecr-login.out</string>
     <key>StartCalendarInterval</key>
     <array>
         <dict>

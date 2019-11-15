@@ -55,6 +55,10 @@ source ~/bash_profile/completion.sh
 source ~/bash_profile/cli.sh
 ```
 
+### Kubernetes configurations
+Save additional K8s cluster config file under `~/.kube/` directory with name prefix `config-`.  
+For example: `~/.kube/config-devDave`
+
 ### Scheduled Jobs
 #### Clear downloads directory once a week
 Clear script is located at `scripts/clear_dir.sh` and launchctl plist file is `jobs/im.golovan.clear-downloads-dir.plist`

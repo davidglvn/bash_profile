@@ -12,9 +12,9 @@
     <key>UserName</key>
     <string>davidg</string>
     <key>StandardErrorPath</key>
-    <string>/tmp/mycommand.err</string>
+    <string>/Users/davidg/bash_profile/logs/clear-trash.err</string>
     <key>StandardOutPath</key>
-    <string>/tmp/mycommand.out</string>
+    <string>/Users/davidg/bash_profile/logs/clear-trash.out</string>
     <key>StartInterval</key>
     <integer>1209600</integer>
 </dict>

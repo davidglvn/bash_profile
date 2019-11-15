@@ -32,7 +32,10 @@ export FSSH_DEBUG=true
 if [ -f '/Users/davidg/google-cloud-sdk/path.bash.inc' ]; then source '/Users/davidg/google-cloud-sdk/path.bash.inc'; fi
 
 # Configure kubectl
-if [ -f '/Users/davidg/.kubeconfig' ]; then source '/Users/davidg/.kubeconfig'; fi
+for config_file in $(ls $HOME/.kube/ | grep -e "^config"); do
+  KUBECONFIG=$KUBECONFIG:$HOME/.kube/$config_file
+done
+export KUBECONFIG=$KUBECONFIG
 
 
 # https://github.com/junegunn/fzf - add support for ctrl+o to open selected file in VS Code
