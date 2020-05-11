@@ -43,3 +43,14 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
 # General stuff
 SSH_PEM_PATH="/Users/davidg/.ssh"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+# GNU sed
+PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:${PATH}"
+
+# MySQL Client
+#export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+#export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+#export CPPFLAGS="-I/usr/local/opt/mysql-client/include"

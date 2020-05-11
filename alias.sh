@@ -68,10 +68,12 @@ alias kube='kubectl'
 alias ping8='ping 8.8.8.8'
 alias ping1='ping 1.1.1.1'
 alias flushdns='flush-dns'
-alias cerebro='docker run --network host --rm -p 9000:9000 lmenezes/cerebro'
+alias vimhosts='sudo vim /etc/hosts'
+alias cerebro='docker run --network host --rm lmenezes/cerebro:0.8.5 -Dhttp.address=0.0.0.0 -Dhttp.port=9000'
 
 # Work envs
 alias py-endor='source /Users/davidg/virtualenvs/endor/bin/activate'
+alias py-errbot='source /Users/davidg/virtualenvs/errbot/bin/activate'
 alias ssh-u='ssh -l ubuntu -i ${SSH_PEM_PATH}/${ENDOR_MAIN_PEM}'
 alias ssh-a='ssh -l ec2-user -i ${SSH_PEM_PATH}/${ENDOR_MAIN_PEM}'
 alias ssh-r='ssh -l root -i ${SSH_PEM_PATH}/${ENDOR_MAIN_PEM}'
