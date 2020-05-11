@@ -44,4 +44,8 @@ __git_ps1_custom() {
 }
 
 # The cli
-export PS1='\[$GREEN\]\t$(battery-status)$(ping-speed)\[$BLUE\]$(__nvm_ps1)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]$(~/bash_profile/scripts/short_pwd.py)\[\033[m\]\[$MAGENTA\]$(__git_ps1_custom)\[$MAGENTA\]$(__trfrm_ps1)\[$WHITE\]$(kube_ps1)\$ '
+if [ $TERM_PROGRAM == "Apple_Terminal" ]; then
+    export PS1='\[$GREEN\]\t$(battery-status)$(ping-speed)\[$BLUE\]$(__nvm_ps1)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]$(~/bash_profile/scripts/short_pwd.py)\[\033[m\]\[$MAGENTA\]$(__git_ps1_custom)\[$MAGENTA\]$(__trfrm_ps1)\[$WHITE\]$(kube_ps1)\$ '
+else
+    export PS1='\[$GREEN\]\t$(battery-status)\[$BLUE\]$(__nvm_ps1)\[$RED\]-\[$BRIGHT_BLUE\]$WORKING_ENVIRONMENT\[$YELLOW\]\[$YELLOW\]$(~/bash_profile/scripts/short_pwd.py)\[\033[m\]$(__trfrm_ps1)\[$WHITE\]\$ '
+fi
