@@ -8,12 +8,17 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Setting PATH for Python 3.5
 # The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-export PATH
+#PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+#export PATH
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
+#PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+#export PATH
+# Enbale PyhtonEnv
+eval "$(pyenv init -)"
+
+# Go
+export PATH=$PATH:/Users/davidg/go/bin/
 
 # Some Java things
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
